@@ -25,9 +25,10 @@ html{
 
 body{
     height: 100%;
-    position: relative;
+    
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     /* background-color: green; */
 }
 
@@ -35,6 +36,8 @@ body{
     height: 100%;
     padding: 0;
     margin: 0;
+    position: relative;
+    /* background-color: aqua; */
 }
 
 
@@ -76,9 +79,20 @@ body{
         background-clip: text;
         color: transparent;
         text-fill-color: transparent
-
     }
 }
+@layer components{
+    .content-leave{
+        transform: translateX(-500)
+    }
+    .content-stay{
+        transform: translateX(0)
+    }
+}
+
+
+
+
 
 .text-color{
     @apply text-linear font-bold

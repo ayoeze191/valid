@@ -6,15 +6,14 @@ import navBar from "./../Assets/navBar.svg";
 import { NavLink } from "react-router-dom";
 
 
-const Header = () => {
+const Header = (props) => {
   return (
-    <div className="px-10 sm:px-20 flex justify-between py-2  box-shadow-header w-full">
+    <div className="px-10 sm:px-20 flex justify-between py-2  box-shadow-header w-full h-fit">
       {/* <div className="flex-1"> */}
       <div className="w-14 shrink-0">
         <img src={logo} className= "full"/>
         </div>
       {/* </div> */}
-
       <div className=" flex justify-between items-center gap-2 md:gap-16 ">
         <ul className="md:flex justify-between items-center text-color gap-16 hidden" style={{"fontFamily": "inter-Regular"}}>
         <NavLink to="/nodes">  <li className=" text-linear ">Nodes</li></NavLink>
@@ -25,7 +24,7 @@ const Header = () => {
 
          <NavLink to="/calculator"> <li className="shrink-1">Calculator</li> </NavLink>
         </ul>
-        <img src={navBar} className =  "md:hidden" />
+        <img src={navBar} className =  "md:hidden" onClick={ () => props.modalStatus()} />
         <button className="btn px-5 shrink-1" style={{"fontFamily": "inter-Bold"}}>Buy VLD</button>
       </div>
     </div>

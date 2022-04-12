@@ -1,9 +1,15 @@
 import React from "react";
-
-const SideBar = () => {
+import { NavLink } from "react-router-dom";
+const SideBar = (props) => {
+    console.log(props.show)
     return(
-        <div className="bg-black opacity-50 ">
-            <ul className="flex justify-between items-center text-color gap-16 flex-col" style={{"fontFamily": "inter-Regular"}}>
+        <div className="bg-white fixed left-0 top-0 h-full w-2/5 pt-10 shadow-sm md:hidden"
+        style={{
+            "transform": props.show ? 'translateX(0)' : 'translateY(-100vh)',
+            "opacity": props.show ? '1' : '0'
+        }}
+        >
+            <ul className="flex justify-between items-center text-color gap-16 flex-col h-fit" style={{"fontFamily": "inter-Regular"}}>
         <NavLink to="/nodes">  <li className=" text-linear ">Nodes</li></NavLink>
 
          <NavLink to="" ><li className=" shrink-1">Whitepaper</li></NavLink>
