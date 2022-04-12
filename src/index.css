@@ -1,13 +1,80 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer utilities{
+    .bg-linear{
+        background: linear-gradient(244.45deg, #515099 8.04%, #0077B6 66.17%);
+    }
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+@layer utilities{
+    .text-blak{
+        color: #050448;
+    }
+    .box-shadow-col{
+        box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.16);
+    }
+    .box-shadow-header{
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+    .box-shadow-footer{
+        box-shadow: 0px -4px 14px rgba(0, 0, 0, 0.14);
+    }
+    .box-shadow-table{
+        box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.16);
+    }
+    .w-67{
+        width: 16.5rem
+    }
+    .max-w-18{
+        max-width: 16.5rem;
+    }
+    .table-spacing-1{
+        border-spacing: 5px 15px;
+    }
 }
+
+
+@layer components{
+    .text-linear{
+        background: linear-gradient(244.45deg, #515099 8.04%, #0077B6 66.17%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: transparent;
+        text-fill-color: transparent
+
+    }
+}
+
+.text-color{
+    @apply text-linear font-bold
+}
+
+.btn{
+    @apply bg-linear rounded-lg py-2 text-white 
+}
+
+@font-face {
+    font-family: 'inter-Regular';
+    src: local('inter-Regular'), url(./Fonts/Inter-Regular.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'inter-Bold';
+    src: local('inter-Bold'), url(./Fonts/Inter-Bold.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'inter-Medium';
+    src: local('inter-Medium'), url(./Fonts/Inter-Medium.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'inter-SemiBold';
+    src: local('inter-SemiBold'), url(./Fonts/Inter-SemiBold.ttf) format('truetype');
+  }
