@@ -8,13 +8,16 @@ import {  BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Calculator from './Components/Calculator/Calculator';
 import Node from './Components/Node/Node';
 import SideBar from './Components/SideBar';
+import Overlay from './Components/Ui/Overlay';
 import { useState } from 'react';
 
 
 function App() {
   const [showSideBar, setShowSideBar] = useState(false)
+  const [showOverlay, setOverlay] = useState(false)
   const changeModalStatus = () => {
     setShowSideBar(!showSideBar)
+    setOverlay(!showOverlay)
   }
   return (
     <Router>
@@ -29,7 +32,7 @@ function App() {
       <SideComp />
       </div>
       
-      
+      {showOverlay&&<Overlay clear = {changeModalStatus}/>}
       <SideBar show = {showSideBar}/>
     </div>
     

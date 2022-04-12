@@ -121,3 +121,8 @@ body{
     font-family: 'inter-SemiBold';
     src: local('inter-SemiBold'), url(./Fonts/Inter-SemiBold.ttf) format('truetype');
   }
+
+  @font-face {
+    font-family: 'Poppins-Bold';
+    src: local('Poppins-Bold'), url(./Fonts/Poppins-Bold.ttf) format('truetype');
+  }
