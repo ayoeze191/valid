@@ -6,7 +6,7 @@ import Twitter from "./../Assets/Twitter.svg"
 
 const SideComp = () => {
     return (
-        <div className="h-full md:ml-10 pt-28 absolute right-2">
+        <div className="h-full md:ml-10 pt-52  absolute top-0 right-4">
     <div className=" bg-myWhite h-fit p-3 rounded-2xl box-shadow-col my-auto">
         <div className="w-10"><img src={discard} className = "w-full"/>
         <h3>Discord</h3>

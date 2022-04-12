@@ -9,6 +9,35 @@
         background: linear-gradient(244.45deg, #515099 8.04%, #0077B6 66.17%);
     }
 }
+*{
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+
+}
+
+
+html{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100%;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    /* background-color: green; */
+}
+
+#root{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+
 
 
 @layer utilities{

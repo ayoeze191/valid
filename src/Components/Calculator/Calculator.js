@@ -1,8 +1,9 @@
 import React from "react";
 import CalculatorHeader from "./../../Assets/CalculatorHeader.png"
+import CopyRight from "../DashBoard/CopyRight";
 const Calculator = () => {
     return(
-        <div className="pt-20 pl-10 sm:pl-20 flex flex-col items-center flex-1 justify-between h-full ">
+        <div className="pt-20  flex flex-col items-center flex-1 justify-between h-full ">
             <div className="mb-16 w-28">
                 <img src={CalculatorHeader}  />
             </div>
@@ -16,6 +17,8 @@ const Calculator = () => {
             <div>
                 <button className="btn px-10">CALCULATE</button>
             </div>
+
+            <CopyRight />
 
         </div>
     )
