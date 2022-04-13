@@ -15,17 +15,17 @@ const Header = (props) => {
         </div>
       {/* </div> */}
       <div className=" flex justify-between items-center gap-2 md:gap-16 ">
-        <ul className="md:flex justify-between items-center text-color gap-16 hidden" style={{"fontFamily": "inter-Regular"}}>
+        <ul className="md:flex justify-between items-center text-color md:gap-16 hidden sm:gap-2" style={{"fontFamily": "inter-Regular"}}>
         <NavLink to="/nodes">  <li className=" text-linear ">Nodes</li></NavLink>
 
-         <NavLink to="" ><li className=" shrink-1">Whitepaper</li></NavLink>
+         <NavLink to="/calculator" ><li className=" shrink-1 text-linear">Calculator</li></NavLink>
 
-          <li className="flex shrink-1">VLD:<span className="ml-2">$0.0001</span></li>
-
-         <NavLink to="/calculator"> <li className="shrink-1">Calculator</li> </NavLink>
+          <li className="flex shrink-1 text-linear">whitespace</li>
         </ul>
-        <img src={navBar} className =  "md:hidden" onClick={ () => props.modalStatus()} />
+         <div>VLD:<span className="ml-2 text-gray-500 " style={{"fontFamily": "inter-Bold"}}>$0.0001</span></div>
         <button className="btn px-5 shrink-1" style={{"fontFamily": "inter-Bold"}}>Buy VLD</button>
+        <img src={navBar} className =  "md:hidden cursor-pointer z-10" onClick={ () => props.modalStatus()} />
+        
       </div>
     </div>
   );

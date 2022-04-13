@@ -26,7 +26,7 @@ const Dashboard = () => {
             </div>
             <div className="flex mb-10 sm:mb-0 min-w-fit pl:10 md:pl-0 pt-10 md:mr-32 order-1 md:order-2 px-5 md:px-0">
             <div className=" max-w-18 relative flex items-start "><img src={Ellipse1} className = "w-full relative -z-10"/></div>
-            <div className=" max-w-xs -ml-36 flex items-start"><img src={Ellipse2} className = "w-full mt-2"/></div>
+            <div className=" max-w-xs -ml-44 flex items-start"><img src={Ellipse2} className = "w-full mt-2"/></div>
         </div>
         </div>
     

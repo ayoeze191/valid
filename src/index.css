@@ -15,6 +15,15 @@
     box-sizing: border-box;
 
 }
+@layer base{
+    ul{
+        @apply list-disc
+    }
+    li{
+        @apply list-disc
+    }
+}
+
 
 
 html{
@@ -126,3 +135,14 @@ body{
     font-family: 'Poppins-Bold';
     src: local('Poppins-Bold'), url(./Fonts/Poppins-Bold.ttf) format('truetype');
   }
+
+  @font-face {
+    font-family: 'Inter-ExtraLight';
+    src: local('Inter-ExtraLight'), url(./Fonts/Inter-Light.ttf) format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Poppins-Regular';
+    src: local('Poppins-Regular'), url(./Fonts/Poppins-Regular.ttf) format('truetype');
+  }
+

@@ -5,7 +5,10 @@ module.exports = {
       colors:{
         'myWhite': '#FAF7F7',
         'claimed': ' #050448'
-      }
+      },
+      fontFamily:{
+        "poppins": ["Poppins-Regular"]
+      },
     },
   },
   plugins: [],
