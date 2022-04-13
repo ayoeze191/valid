@@ -21,9 +21,9 @@ function App() {
   }
   return (
     <Router>
-    <div className="flex flex-col h-full justify-between relative">
+    <div className="flex flex-col justify-between relative md:h-screen h-full my-auto">
       <Header modalStatus = {changeModalStatus}/>
-      <div className='flex-1'>
+      <div className='flex-1 '>
         <Routes>
           <Route path='/' element = {<Dashboard/>} />
           <Route path='/calculator' element = {<Calculator/>} />

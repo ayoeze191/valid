@@ -22,7 +22,7 @@ const Header = (props) => {
 
           <li className="flex shrink-1 text-linear">whitespace</li>
         </ul>
-         <div style={{"fontFamily": "inter-Bold"}}>VLD:<span className="ml-2 text-gray-500 " style={{"fontFamily": "inter-Regular"}}>$0.0001</span></div>
+         <div style={{"fontFamily": "inter-Bold"}}><span className="ml-2 text-gray-500 " style={{"fontFamily": "inter-Regular"}}>$0.0001</span></div>
         <button className="btn px-5 shrink-1" style={{"fontFamily": "inter-Bold"}}>Buy VLD</button>
         <img src={navBar} className =  "md:hidden cursor-pointer z-10" onClick={ () => props.modalStatus()} />
         

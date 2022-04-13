@@ -80,6 +80,9 @@ body{
     .text-myXl{
         font-size: 2.75rem;
     }
+    .max-h-1000{
+        max-height: 1000px;
+    }
 }
 
 
