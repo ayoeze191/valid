@@ -11,8 +11,8 @@ const Dashboard = () => {
                 <div className="flex flex-col justify-between md:flex-row">
                 <div className="order-2">
                 <div className="mb-20 pl-10 md:pl-20 pt-10">
-                <h1 className="text-4xl text-linear flex flex-col mb-2 " style={{"fontFamily": "Poppins-Bold"}}>
-                Welcome to <span> ValidNode</span>
+                <h1 className="text-myXl text-linear flex flex-col mb-2 font-outfit">
+                Welcome to <span className="w-full text-5xl bg-red"> ValidNode</span>
                 </h1>
                 <h3 className="text-blak text-base mb-6"  style={{"fontFamily": "inter-Regular"}}>A simple way to earn Passive income</h3>
                 
@@ -24,7 +24,7 @@ const Dashboard = () => {
                 <h3 className="mb-4">Earn up to 1.35% by not claiming </h3>
             </div>
             </div>
-            <div className="flex mb-10 sm:mb-0 min-w-fit pl:10 md:pl-0 pt-10 md:mr-32 order-1 md:order-2 px-5 md:px-0">
+            <div className="hidden md:flex mb-10 sm:mb-0 min-w-fit pl:10 md:pl-0 pt-10 md:mr-32 order-1 md:order-2 px-5 md:px-0">
             <div className=" max-w-18 relative flex items-start "><img src={Ellipse1} className = "w-full relative -z-10"/></div>
             <div className=" max-w-xs -ml-44 flex items-start"><img src={Ellipse2} className = "w-full mt-2"/></div>
         </div>

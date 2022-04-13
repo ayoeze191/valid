@@ -77,7 +77,11 @@ body{
     .table-spacing-1{
         border-spacing: 5px 15px;
     }
+    .text-myXl{
+        font-size: 2.75rem;
+    }
 }
+
 
 
 @layer components{
@@ -146,3 +150,7 @@ body{
     src: local('Poppins-Regular'), url(./Fonts/Poppins-Regular.ttf) format('truetype');
   }
 
+  @font-face {
+    font-family: 'Outfit-ExtraBold';
+    src: local('Outfit-ExtraBold'), url(./Fonts/Outfit-ExtraBold.ttf) format('truetype');
+  }

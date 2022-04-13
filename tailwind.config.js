@@ -7,7 +7,9 @@ module.exports = {
         'claimed': ' #050448'
       },
       fontFamily:{
-        "poppins": ["Poppins-Regular"]
+        "poppins": ["Poppins-Regular"],
+        "poppins-bold": ["Poppins-Bold"],
+        "outfit": ['Outfit-ExtraBold'],
       },
     },
   },
