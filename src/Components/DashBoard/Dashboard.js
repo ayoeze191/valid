@@ -11,7 +11,7 @@ const Dashboard = () => {
             <div className="flex-1 flex flex-col ">
                 <div className="flex flex-col md:flex-row justify-between h-full">
                 <div className="order-2 flex  flex-col  h-full ">
-                <div className="mb-20 pl-10 md:pl-20 pt-10">
+                <div className="mb-20 pl-10 md:pl-20 pt-16 md:pt-10">
                 <h1 className="text-myXl text-linear flex flex-col mb-2 font-outfit">
                 Welcome to <span className="w-full text-5xl bg-red"> ValidNode</span>
                 </h1>
@@ -32,7 +32,7 @@ const Dashboard = () => {
         </div>
         </div>
         <div>
-        <div className="text-base text-sky-600 pl-10 md:pl-20"  style={{"fontFamily": "inter-Bold"}}>
+        <div className=" text-sm text-sky-600 pl-10 md:pl-20 mb-4"  style={{"fontFamily": "inter-Bold"}}>
         Feel free to reach us on <span className="text-indigo-900">Twitter</span> or <span className="text-indigo-900">Discord</span> for any questions
         </div>
        
