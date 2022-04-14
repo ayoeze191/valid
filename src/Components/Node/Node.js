@@ -39,10 +39,10 @@ const Node = () => {
             <td className="text-center">1%</td>
             <td className="text-left">5000000</td>
             <td className="pr-5">
-            <div className="w-4 pb-5 pt-5 "><img src={downloadIcon} className = "w-full"/></div>
+            <div className="w-7 pb-5 pt-5 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
             </td>
-            <td className="">
-            <div className="w-4 pb-5 pt-5"><img src={forkIcon} className = "w-full"/></div>
+            <td className="pr-5">
+            <div className="w-4 pb-5 pt-5 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
             </td>
           </tr>
           <tr>
@@ -51,10 +51,10 @@ const Node = () => {
             <td className="text-center">1%</td>
             <td className="text-left">5000000</td>
             <td>
-            <div className="w-4 pb-5"><img src={downloadIcon} className = "w-full"/></div>
+            <div className="w-7 pb-5 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
             </td>
             <td>
-            <div className="w-4 pb-5"><img src={forkIcon} className = "w-full"/></div>
+            <div className="w-4 pb-5 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
             </td>
             
           </tr>
@@ -65,10 +65,10 @@ const Node = () => {
             <td className="text-center">1%</td>
             <td className="text-left">5000000</td>
             <td className="pb-5">
-            <div className="w-4"><img src={downloadIcon} className = "w-full"/></div>
+            <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
             </td>
             <td  className="w-fit pb-5">
-            <div className="w-4"><img src={forkIcon} className = "w-full"/></div>
+            <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
             </td>
           </tr>
 
@@ -78,70 +78,70 @@ const Node = () => {
             <td className="text-center">1%</td>
             <td className="text-left">5000000</td>
             <td className="h-full pb-5">
-            <div className="w-4"><img src={downloadIcon} className = "w-full"/></div>
+            <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
             </td>
             <td className="pb-5">
-            <div className="w-4"><img src={forkIcon} className = "w-full"/></div>
+            <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
             </td>
           </tr>
         </tbody>
       </table>
 
       </div>
-      <ul className="md:hidden w-full  border mb-10">
-        <li className="flex flex-col gap-3 px-3 border-b font-poppins py-3">
+      <ul className="md:hidden w-full  border mb-10 flex flex-col gap-8">
+        <li className="flex flex-col gap-3 px-3   font-poppins py-3">
           <div className="flex justify-between">
           <h1 className="text-2xl">Node1 </h1>
           <h3 className="text-sm">amount :<span>5000 USD</span></h3>
           </div>
           <div className="flex gap-6 justify-end">
             <h3> Reward: 25021vld</h3>
-           <div className="w-4"><img src={downloadIcon} className = "w-full"/></div>
-           <div className="w-4"><img src={forkIcon} className = "w-full"/></div>
+           <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full hover:cursor-pointer"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full hover:cursor-pointer"/></div>
           </div>
         </li>
-        <li className="flex flex-col gap-3 px-3 border-b  font-poppins py-3">
+        <li className="flex flex-col gap-3 px-3    font-poppins py-3">
           <div className="flex justify-between">
           <h1 className="text-2xl">Node2</h1>
           <h3 className="text-sm">amount: <span>5000 USD</span></h3>
           </div>
           <div className="flex gap-6 justify-end">
             <h3> Reward: 25021vld</h3>
-           <div className="w-4"><img src={downloadIcon} className = "w-full"/></div>
-           <div className="w-4"><img src={forkIcon} className = "w-full"/></div>
+           <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
           </div>
         </li>
-        <li className="flex flex-col gap-3 px-3 border-b font-poppins py-3">
+        <li className="flex flex-col gap-3 px-3   font-poppins py-3">
           <div className="flex justify-between">
           <h1 className="text-2xl">Node1</h1>
           <h3 className="text-sm">amount: <span>5000 USD</span></h3>
           </div>
           <div className="flex gap-6 justify-end">
             <h3> Reward: 25021vld</h3>
-           <div className="w-4"><img src={downloadIcon} className = "w-full"/></div>
-           <div className="w-4"><img src={forkIcon} className = "w-full"/></div>
+           <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
           </div>
         </li>
-        <li className="flex flex-col gap-3 px-3 border-b font-poppins py-3">
+        <li className="flex flex-col gap-3 px-3   font-poppins py-3">
           <div className="flex justify-between">
           <h1 className="text-2xl">Node1</h1>
           <h3 className="text-sm">amount: <span>5000 USD</span></h3>
           </div>
           <div className="flex gap-6 justify-end">
             <h3> Reward: 25021vld</h3>
-           <div className="w-4"><img src={downloadIcon} className = "w-full"/></div>
-           <div className="w-4"><img src={forkIcon} className = "w-full"/></div>
+           <div className="w-7  hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
           </div>
         </li>
-        <li className="flex flex-col gap-3 px-3 border-b font-poppins py-3">
+        <li className="flex flex-col gap-3 px-3   font-poppins py-3">
           <div className="flex justify-between">
           <h1 className="text-2xl">Node1</h1>
           <h3 className="text-sm">amount: <span>5000 USD</span></h3>
           </div>
           <div className="flex gap-6 justify-end">
             <h3> Reward: 25021vld</h3>
-           <div className="w-4"><img src={downloadIcon} className = "w-full"/></div>
-           <div className="w-4"><img src={forkIcon} className = "w-full"/></div>
+           <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
           </div>
         </li>
       </ul>

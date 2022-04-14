@@ -85,6 +85,14 @@ body{
     }
 }
 
+a:active,.header .active li{
+    list-style: none;
+    font-family: Outfit-ExtraBold;
+    border-style: solid;
+    border-color: black;
+    border-bottom-width: 1px;
+    transition: all 3s;
+}
 
 
 @layer components{
@@ -94,7 +102,7 @@ body{
         -webkit-text-fill-color: transparent;
         background-clip: text;
         color: transparent;
-        text-fill-color: transparent
+        /* text-fill-color: transparent */
     }
 }
 @layer components{

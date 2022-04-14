@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 const SideBar = (props) => {
   
     return(
-        <div className="bg-white fixed right-0 top-0 h-full w-2/5 pt-10 shadow-sm md:hidden z-20"
+        <div className="bg-white fixed right-0 top-0 h-full w-2/5 pt-10 shadow-sm md:hidden z-20 "
         style={{
             "transform": props.show ? 'translateX(0)' : 'translateX(100vh)',
             "opacity": props.show ? '1' : '0',
