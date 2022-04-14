@@ -8,10 +8,10 @@ import { NavLink } from "react-router-dom";
 
 const Header = (props) => {
   return (
-    <div className="px-10 md:px-20 flex justify-between py-2  box-shadow-header w-full h-fit">
+    <div className="pl-10 pr-2 md:px-20 flex justify-between py-2  box-shadow-header w-full h-fit">
       {/* <div className="flex-1"> */}
       <div className="w-14 shrink-0">
-        <img src={logo} className= "full"/>
+       <NavLink to="/"> <img src={logo} className= "full"/> </NavLink>
         </div>
       {/* </div> */}
       <div className=" flex justify-between items-center gap-5 md:gap-16 ">
