@@ -11,8 +11,8 @@ const SideBar = (props) => {
             
         }}
         >
-            <ul className="flex justify-between items-center text-color gap-16 flex-col h-fit" style={{"fontFamily": "inter-Regular"}}>
-        <NavLink to="/nodes">  <li className=" text-linear ">Nodes</li></NavLink>
+            <ul className="flex justify-between items-left text-color gap-16 flex-col h-fit pl-5" style={{"fontFamily": "inter-Regular"}}>
+        <NavLink to="/nodes">  <li className=" text-left ">Nodes</li></NavLink>
 
          <NavLink to="/calculator" ><li className=" shrink-1">calculator</li></NavLink>
 
