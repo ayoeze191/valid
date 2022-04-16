@@ -7,7 +7,7 @@ import CopyRight from "./CopyRight";
 
 const Dashboard = () => {
     return(
-        <div className="w-full flex-1 flex flex-col h-full gap-0 pt-0 justify-between">
+        <div className="w-full flex-1 flex flex-col h-full gap-0 pt-0 justify-between ">
             <div className="flex-[0.8] flex flex-col justify-center">
                 <div className="flex flex-col md:flex-row justify-between h-full md:items-center">
                 <div className="order-2 flex  flex-col  h-full justify-center">
@@ -35,10 +35,8 @@ const Dashboard = () => {
         </div>
         </div>
         </div>
-        <div>
-        
-       
 
+        <div className="">
         <CopyRight />
         </div>
 
