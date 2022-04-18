@@ -88,14 +88,14 @@ const Node = () => {
       </table>
 
       </div>
-      <ul className="md:hidden w-full  border mb-10 flex flex-col gap-8 border-hidden px-10">
+      <ul className="md:hidden w-full  border mb-10 flex flex-col gap-8 border-hidden px-10 mt-10">
         <li className="flex flex-col gap-3 px-3   font-poppins py-3">
           <div className="flex justify-between">
           <h1 className="">Node1 </h1>
-          <h3 className="text-sm">amount :<span>5000 USD</span></h3>
+          <h3 className="text-xs">amount :<span>5000 USD</span></h3>
           </div>
           <div className="flex gap-6 justify-end">
-            <h3> Reward: 25021vld</h3>
+            <h3 className="text-xs"> Reward: 25021 vld</h3>
            <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full hover:cursor-pointer"/></div>
            <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full hover:cursor-pointer"/></div>
           </div>
@@ -103,10 +103,10 @@ const Node = () => {
         <li className="flex flex-col gap-3 px-3    font-poppins py-3">
           <div className="flex justify-between">
           <h1 className="">Node2</h1>
-          <h3 className="text-sm">amount: <span>5000 USD</span></h3>
+          <h3 className="text-xs">amount: <span>5000 USD</span></h3>
           </div>
           <div className="flex gap-6 justify-end">
-            <h3> Reward: 25021vld</h3>
+            <h3 className="text-xs"> Reward: 25021 vld</h3>
            <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
            <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
           </div>
@@ -114,10 +114,10 @@ const Node = () => {
         <li className="flex flex-col gap-3 px-3   font-poppins py-3">
           <div className="flex justify-between">
           <h1 className="">Node1</h1>
-          <h3 className="text-sm">amount: <span>5000 USD</span></h3>
+          <h3 className="text-xs">amount: <span>5000 USD</span></h3>
           </div>
           <div className="flex gap-6 justify-end">
-            <h3> Reward: 25021vld</h3>
+            <h3 className="text-xs"> Reward: 25021 vld</h3>
            <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
            <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
           </div>
@@ -125,10 +125,10 @@ const Node = () => {
         <li className="flex flex-col gap-3 px-3   font-poppins py-3">
           <div className="flex justify-between">
           <h1 className="">Node1</h1>
-          <h3 className="text-sm">amount: <span>5000 USD</span></h3>
+          <h3 className="text-xs">amount: <span>5000 USD</span></h3>
           </div>
           <div className="flex gap-6 justify-end">
-            <h3> Reward: 25021vld</h3>
+            <h3 className="text-xs"> Reward: 25021 vld</h3>
            <div className="w-7  hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
            <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
           </div>
@@ -136,10 +136,10 @@ const Node = () => {
         <li className="flex flex-col gap-3 px-3   font-poppins py-3">
           <div className="flex justify-between">
           <h1 className="">Node1</h1>
-          <h3 className="text-sm">amount: <span>5000 USD</span></h3>
+          <h3 className="text-xs">amount: <span>5000 USD</span></h3>
           </div>
           <div className="flex gap-6 justify-end">
-            <h3> Reward: 25021vld</h3>
+            <h3 className="text-xs"> Reward: 25021vld</h3>
            <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
            <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
           </div>
