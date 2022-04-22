@@ -1,7 +1,7 @@
 import React from "react";
 import CopyRight from "../DashBoard/CopyRight";
-import downloadIcon from "./../../Assets/downloadIcon.png"
-import forkIcon from "./../../Assets/forkIcon.png"
+import figmadownlod from "./../../Assets/figmadownlod.png"
+import figmafork from "./../../Assets/figmafork.png"
 
 const Node = () => {
   return (
@@ -38,10 +38,10 @@ const Node = () => {
             <td className="text-center">1%</td>
             <td className="text-left">5000000</td>
             <td>
-            <div className="w-7  hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
+            <div className="w-4  hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             </td>
             <td>
-            <div className="w-4  hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
+            <div className="w-4  hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
             </td>
             
           </tr>
@@ -52,10 +52,10 @@ const Node = () => {
             <td className="text-center">1%</td>
             <td className="text-left">5000000</td>
             <td>
-            <div className="w-7  hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
+            <div className="w-4  hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             </td>
             <td>
-            <div className="w-4  hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
+            <div className="w-4  hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
             </td>
             
           </tr>
@@ -66,10 +66,10 @@ const Node = () => {
             <td className="text-center">1%</td>
             <td className="text-left">5000000</td>
             <td className="">
-            <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
+            <div className="w-4 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             </td>
             <td  className="w-fit ">
-            <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
+            <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
             </td>
           </tr>
           <tr>
@@ -78,10 +78,10 @@ const Node = () => {
             <td className="text-center">1%</td>
             <td className="text-left">5000000</td>
             <td className="">
-            <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
+            <div className="w-4 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             </td>
             <td  className="w-fit ">
-            <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
+            <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
             </td>
           </tr>
         </tbody>
@@ -96,8 +96,8 @@ const Node = () => {
           </div>
           <div className="flex gap-6 justify-end">
             <h3 className="text-xs"> Reward: 25021 vld</h3>
-           <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full hover:cursor-pointer"/></div>
-           <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full hover:cursor-pointer"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={figmadownlod} className = "w-full hover:cursor-pointer"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full hover:cursor-pointer"/></div>
           </div>
         </li>
         <li className="flex flex-col gap-3 px-3    font-poppins py-3  border-b">
@@ -107,8 +107,8 @@ const Node = () => {
           </div>
           <div className="flex gap-6 justify-end">
             <h3 className="text-xs"> Reward: 25021 vld</h3>
-           <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
-           <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
           </div>
         </li>
         <li className="flex flex-col gap-3 px-3   font-poppins py-3  border-b">
@@ -118,8 +118,8 @@ const Node = () => {
           </div>
           <div className="flex gap-6 justify-end">
             <h3 className="text-xs"> Reward: 25021 vld</h3>
-           <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
-           <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
           </div>
         </li>
         <li className="flex flex-col gap-3 px-3   font-poppins py-3  border-b">
@@ -129,8 +129,8 @@ const Node = () => {
           </div>
           <div className="flex gap-6 justify-end">
             <h3 className="text-xs"> Reward: 25021 vld</h3>
-           <div className="w-7  hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
-           <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
+           <div className="w-4  hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
           </div>
         </li>
         <li className="flex flex-col gap-3 px-3   font-poppins py-3  border-b">
@@ -140,8 +140,8 @@ const Node = () => {
           </div>
           <div className="flex gap-6 justify-end">
             <h3 className="text-xs"> Reward: 25021vld</h3>
-           <div className="w-7 hover:cursor-pointer"><img src={downloadIcon} className = "w-full"/></div>
-           <div className="w-4 hover:cursor-pointer"><img src={forkIcon} className = "w-full"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+           <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
           </div>
         </li>
       </ul>

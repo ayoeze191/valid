@@ -8,7 +8,6 @@ const SideBar = (props) => {
             "transform": props.show ? 'translateX(0)' : 'translateX(100vh)',
             "opacity": props.show ? '1' : '0',
             "transition":  "all 0.4s ease-out"
-            
         }}
         >
             <ul className="flex justify-between items-left text-color gap-16 flex-col h-fit pl-5" style={{"fontFamily": "inter-Regular"}}>
