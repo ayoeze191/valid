@@ -3,7 +3,7 @@ import CopyRight from "../DashBoard/CopyRight";
 import figmadownlod from "./../../Assets/figmadownlod.png"
 import figmafork from "./../../Assets/figmafork.png"
 
-const Node = () => {
+const Node = (props) => {
   return (
     <div className="w-full flex  md:flex flex-col items-center justify-between h-full  md:px-auto py-0">
      
@@ -36,9 +36,9 @@ const Node = () => {
             <td className="text-left pl-10">Node 1</td>
             <td className="text-left">5000</td>
             <td className="text-center">1%</td>
-            <td className="text-left">5000000</td>
+            <td className="text-left">5000000 me</td>
             <td>
-            <div className="w-4  hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+            <div className="w-4  hover:cursor-pointer" onClick={() => props.show()}><img src={figmadownlod} className = "w-full"/></div>
             </td>
             <td>
             <div className="w-4  hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
@@ -145,6 +145,7 @@ const Node = () => {
           </div>
         </li>
       </ul>
+      {/* <button>Create Node</button> */}
       <CopyRight />
     </div>
   );
