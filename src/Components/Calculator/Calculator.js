@@ -10,7 +10,7 @@ const Calculator = () => {
             </div>
             <div className="mb-16">
                 <div><input type="number" placeholder="AMOUNT IN VLD" className="px-5  border border-black mb-5 flex rounded-md w-64 py-2"/></div>
-                <div><input type='Date' placeholder="Number of years" className="px-5  border border-black rounded-md w-64 py-2"/></div>
+                <div><input type="text" placeholder="Number of years" className="px-5  border border-black rounded-md w-64 py-2"/></div>
 
             </div>
 
