@@ -9,74 +9,90 @@ import Calculator from './Components/Calculator/Calculator';
 import Node from './Components/Node/Node';
 import SideBar from './Components/SideBar';
 import Overlay from './Components/Ui/Overlay';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import GoogleLogin from 'react-google-login'
 import Claimed from './Components/Claimed';
-
-
-
+import CreateNode from './Components/CreateNode';
+import axios from 'axios';
+import Store from './Components/Store';
+import { LoadUser, userLoggedIn } from './Components/Store/Action';
+import googleIcon from './Assets/googleIcon.svg'
 
 function App() {
   const [showSideBar, setShowSideBar] = useState(false)
   const [showOverlay, setOverlay] = useState(false)
   const [claim, setclaim] = useState(false)
-  const [user, setUser] = useState(null)
+  // const [user, setUser] = useState()
+  const [Createnode, setCreatenode] = useState(false)
+  
   const changeModalStatus = () => {
     setShowSideBar(!showSideBar)
     setOverlay(!showOverlay)
     setclaim(false)
+    setCreatenode(false)
   }
 
-  const HandleFailure = (result) => {
-    // alert(result);
-  }
-  const handleLogin = (googleData) => {
-    // console.log(googleData.profileObj.email)
-    setUser(googleData.profileObj.email)    
+  useEffect(() => {
+    Store.dispatch(LoadUser())
+  })
 
+
+  
+
+
+  const AddNodes = (nodes) => {
+    axios.post('https://valid-9f976-default-rtdb.firebaseio.com//nodes.json', nodes)
+    .then((res) => {
+      console.log(res)
+    })
+    .catch((err) => 
+    console.log(err))
   }
+
+  const createNodeHandler = (name, amount) => {
+  
+    const body = {
+      Node_name: name,
+      Node_amount: amount,
+      // user: user?user:'anonymous'
+    }
+
+    AddNodes(body)
+    console.log('finished working')
+  }
+
+
 
   const showClaim = () => {
     setclaim(!claim)
     setOverlay(!showOverlay)
-
-    // setInterval(() => {
-    //   setclaim(!claim)
-    //   setOverlay(!Overlay)
-    // }, 1000)
   }
   
+  const showCreatenode = () => {
+    setCreatenode(!Createnode)
+    setOverlay(!showOverlay)
+  }
+
+
 
   return (
     <Router>
-    <div className="flex flex-col justify-between relative md:h-screen my-auto h-full ">
-      {user == null?
-      <div className=' pl-10 md:pl-20 mx-auto w-full'>
-        <div className='w-fit h-fit bg-linear'>
-      <GoogleLogin
-      clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
-      buttonText = 'Log in With Google'
-      onSuccess={ handleLogin }
-      onFailure = {HandleFailure}
-      cookiePolicy = {'single_host_origin'}
-      >
-      </GoogleLogin>
-      </div>
-      </div>
-      :<div className='pl-10 md:pl-20 mx-auto w-full font-poppins-bold'>You are Logged in as {user}</div>
-      }
+    <div className="flex flex-col  relative md:h-screen my-auto h-fit items-center justify-center ">
+
       <Header modalStatus = {changeModalStatus}/>
-      <div className='flex-1 w-full'>
+      
+      <div className='flex-1 w-full h-full'>
         <Routes>
           <Route path='/' element = {<Dashboard/>} />
           <Route path='/calculator' element = {<Calculator/>} />
-          <Route path='/Nodes' element = {<Node show = {showClaim}/>} />
+          <Route path='/Nodes' element = {<Node show = {showClaim} showCreatenode = {showCreatenode}/>} />
       </Routes>
       <SideComp />
       </div>
       
       {showOverlay&&<Overlay clear = {changeModalStatus}/>}
       {claim && <Claimed />}
+      {Createnode && <CreateNode submit = {createNodeHandler}/>}
       <SideBar show = {showSideBar}/>
     </div>
   
