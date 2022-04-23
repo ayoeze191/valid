@@ -11,11 +11,11 @@ const SideBar = (props) => {
         }}
         >
             <ul className="flex justify-between items-left text-color gap-16 flex-col h-fit pl-5" style={{"fontFamily": "inter-Regular"}}>
-        <NavLink to="/nodes">  <li className=" text-left ">Nodes</li></NavLink>
+        <NavLink to="/nodes" onClick={() => props.clear()}>  <li className=" text-left ">Nodes</li></NavLink>
 
-         <NavLink to="/calculator" ><li className=" shrink-1">calculator</li></NavLink>
+         <NavLink to="/calculator" onClick={() => props.clear()}><li className=" shrink-1">calculator</li></NavLink>
 
-         <li className="shrink-1 cursor-pointer">whitepaper</li> 
+         <li className="shrink-1 cursor-pointer"><a href="https://validnode.gitbook.io/validnode-whitepaper/" >whitepaper</a></li> 
         </ul>
         </div>
     )

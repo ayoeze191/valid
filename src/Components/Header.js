@@ -37,7 +37,7 @@ const Header = (props) => {
             <li className=" shrink-1 ">Calculator</li>
           </NavLink>
 
-          <li className="flex shrink-1 cursor-pointer">whitespace</li>
+          <li className="flex shrink-1 cursor-pointer"><a href="https://validnode.gitbook.io/validnode-whitepaper/">whitespace</a></li>
         </ul>
         <div style={{ fontFamily: "inter-Bold" }}>
           <span

@@ -32,6 +32,13 @@ function App() {
     setCreatenode(false)
   }
 
+  const clearSreen = () => {
+    setShowSideBar(false)
+    setOverlay(false)
+    setclaim(false)
+    setCreatenode(false)
+  }
+
   useEffect(() => {
     Store.dispatch(LoadUser())
   })
@@ -57,7 +64,6 @@ function App() {
       user: Store.getState().auth.user?Store.getState().auth.user:'anonymous'
     }
     AddNodes(body)
-    
   }
 
 
@@ -89,10 +95,10 @@ function App() {
       <SideComp />
       </div>
       
-      {showOverlay&&<Overlay clear = {changeModalStatus}/>}
+      {showOverlay&&<Overlay clear = {clearSreen}/>}
       {claim && <Claimed />}
       {Createnode && <CreateNode />}
-      <SideBar show = {showSideBar}/>
+      <SideBar show = {showSideBar} clear = {clearSreen}/>
     </div>
   
     </Router>
