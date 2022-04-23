@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import CopyRight from "../DashBoard/CopyRight";
-import figmadownlod from "./../../Assets/figmadownlod.png"
+import figmadownlod from "./../../Assets/downloadIcon.png"
 import figmafork from "./../../Assets/figmafork(2).png"
 import Group6 from "./../../Assets/Group6.png"
 import { useSelector } from "react-redux";
