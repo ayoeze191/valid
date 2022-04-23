@@ -20,12 +20,12 @@ const CreateNode = (props) => {
   }
 
   return (
-    <div className=' flex flex-col justify-between gap-10 text-blue-600 font-poppins rounded-lg absolute items-center z-50 bg-white'>
-        <div className='flex flex-col gap-5 bg-white px-5 py-5 rounded-lg'>
-        <div className='flex'>
-            Node Name:<input type='text' className='border' name = 'name' onChange={(e) => onChangleHandler(e)} />
+    <div className=' flex flex-col justify-between gap-10 text-blue-600 font-poppins rounded-lg absolute items-center z-50 bg-white px-4 py-3'>
+        <div className='flex flex-col gap-5 bg-white px-5 py-5 rounded-lg w-full'>
+        <div className='flex flex-col w-full'>
+            Node Name: <input type='text' className='border' name = 'name' onChange={(e) => onChangleHandler(e)} />
         </div>
-        <div className='flex'>
+        <div className='flex flex-col'>
             Amount of Node in VLD:<input type='text' className='border' name = 'amount'onChange={(e) => onChangleHandler(e)}/>
         </div>
         <div className='items-center'>

@@ -69,9 +69,9 @@ const Node = (props) => {
              <td className="text-left pl-10">Node 1</td>
              <td className="text-left">5000</td>
              <td className="text-center">1%</td>
-             <td className="text-left">5000000 me</td>
+             <td className="text-left">5000000 </td>
              <td className="pr-3">
-             <div className="w-4  hover:cursor-pointer" onClick={() => props.show()}><img src={figmadownlod} className = "w-full"/></div>
+             <div className="w-7  hover:cursor-pointer" onClick={() => props.show()}><img src={figmadownlod} className = "w-full"/></div>
              </td>
              <td>
              <div className="w-4  hover:cursor-pointer "><img src={figmafork} className = "w-full"/></div>
@@ -85,7 +85,7 @@ const Node = (props) => {
              <td className="text-center">1%</td>
              <td className="text-left">5000000</td>
              <td>
-             <div className="w-4  hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+             <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
              </td>
              <td>
              <div className="w-4  hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
@@ -99,7 +99,7 @@ const Node = (props) => {
              <td className="text-center">1%</td>
              <td className="text-left">5000000</td>
              <td className="">
-             <div className="w-4 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+             <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
              </td>
              <td  className="w-fit ">
              <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
@@ -111,7 +111,7 @@ const Node = (props) => {
              <td className="text-center">1%</td>
              <td className="text-left">5000000</td>
              <td className="">
-             <div className="w-4 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+             <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
              </td>
              <td  className="w-fit ">
              <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
@@ -129,7 +129,7 @@ const Node = (props) => {
            </div>
            <div className="flex gap-6 justify-end">
              <h3 className="text-xs"> Reward: 25021 vld</h3>
-            <div className="w-4 hover:cursor-pointer"><img src={figmadownlod} className = "w-full hover:cursor-pointer"/></div>
+            <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full hover:cursor-pointer"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full hover:cursor-pointer"/></div>
            </div>
          </li>
@@ -140,7 +140,7 @@ const Node = (props) => {
            </div>
            <div className="flex gap-6 justify-end">
              <h3 className="text-xs"> Reward: 25021 vld</h3>
-            <div className="w-4 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+            <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
            </div>
          </li>
@@ -151,7 +151,7 @@ const Node = (props) => {
            </div>
            <div className="flex gap-6 justify-end">
              <h3 className="text-xs"> Reward: 25021 vld</h3>
-            <div className="w-4 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+            <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
            </div>
          </li>
@@ -162,7 +162,7 @@ const Node = (props) => {
            </div>
            <div className="flex gap-6 justify-end">
              <h3 className="text-xs"> Reward: 25021 vld</h3>
-            <div className="w-4  hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+            <div className="w-7  hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
            </div>
          </li>
@@ -173,7 +173,7 @@ const Node = (props) => {
            </div>
            <div className="flex gap-6 justify-end">
              <h3 className="text-xs"> Reward: 25021vld</h3>
-            <div className="w-4 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+            <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
            </div>
          </li>
