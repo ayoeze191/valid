@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import CopyRight from "../DashBoard/CopyRight";
 import figmadownlod from "./../../Assets/figmadownlod.png"
 import figmafork from "./../../Assets/figmafork.png"
@@ -9,27 +9,30 @@ import Overlay from "../Ui/Overlay";
 import GoogleLogin from "react-google-login";
 import { userLoggedIn } from "../Store/Action";
 import googleIcon from "./../../Assets/googleIcon.svg"
+import { getAllnodes } from "../Store/Action";
 const Node = (props) => {
   const is_authenticated = useSelector((state) => state.auth.isauthenticated)
   const user = useSelector((state) => state.auth.user)
   const dispatch = useDispatch()
+  useEffect(() => {
+      getAllnodes()
+  })
 
   const HandleFailure = (result) => {
     // alert(result);
   }
-  const handleLogin = (googleData) => {
-    // setUser(googleData.profileObj.email)  
+  const handleLogin = (googleData) => {  
     dispatch(userLoggedIn( googleData.accessToken, googleData.profileObj.email))  
   }
 
 
   return (
-    <div className="w-full flex  md:flex flex-col items-center justify-between h-fit  md:px-auto py-0 md:h-full">
-      {is_authenticated?<div className="w-full pl-10 pr-2 md:px-20 flex justify-end items-center pt-2"><div className="flex"><img src={googleIcon} className = 'w-7' />{user}</div></div>:null}
+    <div className="w-full flex  md:flex flex-col items-center justify-between h-full  md:px-auto py-0 md:h-full">
+      {is_authenticated?<div className="w-full pl-10 pr-2 md:px-20 flex justify-end items-center pt-2"><div className="flex gap-2"><img src={googleIcon} className = 'w-7' />{user}</div></div>:null}
        {is_authenticated?null:<Overlay />}
       {is_authenticated?
-      <div className="w-full h-full flex flex-col justify-center mb-5">
-    <div className="flex flex-col items-center">
+     
+    <div className="flex flex-col items-center w-full h-full">
      <div className="hidden flex-1 md:flex items-center w-1/2 max-w-2xl">
        <table className="w-full max-w-4xl text-sm md:table min-h-[300px]" style={{"fontFamily": "inter-Regular"}} >
          <thead className="text-gray-400">
@@ -168,10 +171,8 @@ const Node = (props) => {
            </div>
          </li>
        </ul>
-       </div>
-       <div className="w-1/2 mx-auto flex justify-end mt-2">
-       <button onClick={() => props.showCreatenode()} className='bg-linear w-fit rounded-md px-3 py-2 text-white font-bold'>Create Node</button>
-       </div>
+     
+  
      </div>: 
      
      <div className="w-full h-full flex justify-center items-center">

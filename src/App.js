@@ -54,9 +54,8 @@ function App() {
     const body = {
       Node_name: name,
       Node_amount: amount,
-      // user: user?user:'anonymous'
+      user: Store.getState().auth.user?Store.getState().auth.user:'anonymous'
     }
-
     AddNodes(body)
     console.log('finished working')
   }
@@ -77,7 +76,7 @@ function App() {
 
   return (
     <Router>
-    <div className="flex flex-col  relative md:h-screen my-auto h-fit items-center justify-center ">
+    <div className="flex flex-col  relative md:h-screen my-auto h-full items-center justify-center">
 
       <Header modalStatus = {changeModalStatus}/>
       
