@@ -57,7 +57,7 @@ function App() {
       user: Store.getState().auth.user?Store.getState().auth.user:'anonymous'
     }
     AddNodes(body)
-    console.log('finished working')
+    
   }
 
 
@@ -78,7 +78,7 @@ function App() {
     <Router>
     <div className="flex flex-col  relative md:h-screen my-auto h-full items-center justify-center">
 
-      <Header modalStatus = {changeModalStatus}/>
+      <Header modalStatus = {changeModalStatus} submit = {showCreatenode}/>
       
       <div className='flex-1 w-full h-full'>
         <Routes>
@@ -91,7 +91,7 @@ function App() {
       
       {showOverlay&&<Overlay clear = {changeModalStatus}/>}
       {claim && <Claimed />}
-      {Createnode && <CreateNode submit = {createNodeHandler}/>}
+      {Createnode && <CreateNode />}
       <SideBar show = {showSideBar}/>
     </div>
   

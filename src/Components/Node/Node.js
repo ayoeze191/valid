@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import CopyRight from "../DashBoard/CopyRight";
 import figmadownlod from "./../../Assets/figmadownlod.png"
-import figmafork from "./../../Assets/figmafork.png"
+import figmafork from "./../../Assets/figmafork(2).png"
 import Group6 from "./../../Assets/Group6.png"
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
@@ -28,11 +28,18 @@ const Node = (props) => {
 
   return (
     <div className="w-full flex  md:flex flex-col items-center justify-between h-full  md:px-auto py-0 md:h-full">
-      {is_authenticated?<div className="w-full pl-10 pr-2 md:px-20 flex justify-end items-center pt-2"><div className="flex gap-2"><img src={googleIcon} className = 'w-7' />{user}</div></div>:null}
+      {is_authenticated?<div className="w-full pl-10 pr-6 md:px-20 flex justify-end items-center pt-2"><div className="flex gap-1"><GoogleLogin
+      clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
+      buttonText = {user}
+      onSuccess={ handleLogin }
+      onFailure = {HandleFailure}
+      cookiePolicy = {'single_host_origin'}
+      >
+      </GoogleLogin></div></div>:null}
        {is_authenticated?null:<Overlay />}
       {is_authenticated?
      
-    <div className="flex flex-col items-center w-full h-full">
+    <div className="flex flex-col items-center w-full h-full px-10">
      <div className="hidden flex-1 md:flex items-center w-1/2 max-w-2xl">
        <table className="w-full max-w-4xl text-sm md:table min-h-[300px]" style={{"fontFamily": "inter-Regular"}} >
          <thead className="text-gray-400">
@@ -63,11 +70,11 @@ const Node = (props) => {
              <td className="text-left">5000</td>
              <td className="text-center">1%</td>
              <td className="text-left">5000000 me</td>
-             <td>
+             <td className="pr-3">
              <div className="w-4  hover:cursor-pointer" onClick={() => props.show()}><img src={figmadownlod} className = "w-full"/></div>
              </td>
              <td>
-             <div className="w-4  hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
+             <div className="w-4  hover:cursor-pointer "><img src={figmafork} className = "w-full"/></div>
              </td>
              
            </tr>
@@ -114,7 +121,7 @@ const Node = (props) => {
        </table>
  
        </div>
-       <ul className="md:hidden w-full  border mb-10 flex flex-col gap-8 border-hidden px-10 mt-10">
+       <ul className="md:hidden w-full mb-10 flex flex-col gap-8 border mt-10 ">
          <li className="flex flex-col gap-3 px-3   font-poppins py-3 border-b">
            <div className="flex justify-between">
            <h1 className="">Node1 </h1>
