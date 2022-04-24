@@ -82,7 +82,7 @@ function App() {
 
   return (
     <Router>
-    <div className="flex flex-col  relative md:h-screen my-auto h-full items-center justify-center">
+    <div className="flex flex-col  relative md:h-screen my-auto h-full items-center justify-center box-border">
 
       <Header modalStatus = {changeModalStatus} submit = {showCreatenode}/>
       

@@ -22,10 +22,10 @@ const CreateNode = (props) => {
   return (
     <div className=' flex flex-col justify-between gap-10 text-blue-600 font-poppins rounded-lg absolute items-center z-50 bg-white px-4 py-3'>
         <div className='flex flex-col gap-5 bg-white px-5 py-5 rounded-lg w-full'>
-        <div className='flex flex-col w-full'>
+        <div className='flex flex-col w-full gap-1'>
             Node Name: <input type='text' className='border' name = 'name' onChange={(e) => onChangleHandler(e)} />
         </div>
-        <div className='flex flex-col'>
+        <div className='flex flex-col gap-1'>
             Amount of Node in VLD:<input type='text' className='border' name = 'amount'onChange={(e) => onChangleHandler(e)}/>
         </div>
         <div className='items-center'>
@@ -33,7 +33,7 @@ const CreateNode = (props) => {
         </div>
         </div>
 
-        <div className='text-red-500 underline w-full rounded-lg text-center'>Amount Put into node cannot be taken out</div>
+        <div className='text-red-500 underline w-full rounded-lg text-center text-[0.7rem]'>Amount Put into node cannot be taken out</div>
     </div>
   )
 }
