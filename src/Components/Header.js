@@ -40,6 +40,14 @@ const Header = (props) => {
           <li className="flex shrink-1 cursor-pointer"><a href="https://validnode.gitbook.io/validnode-whitepaper/">whitespace</a></li>
         </ul>
         <div style={{ fontFamily: "inter-Bold" }}>
+          <a href="https://traderjoexyz.com/trade?outputCurrency=0x83862d7B9A4fD6034c0cfe84CF06d1d3CB7dDc9e#/"
+            className="ml-2  font-extrabold text-blue-500"
+            style={{ fontFamily: "inter-Regular" }}
+          >
+            Visit our Token site
+          </a>
+        </div>
+        <div style={{ fontFamily: "inter-Bold" }}>
           <span
             className="ml-2 text-gray-500 "
             style={{ fontFamily: "inter-Regular" }}

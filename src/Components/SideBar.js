@@ -16,6 +16,14 @@ const SideBar = (props) => {
          <NavLink to="/calculator" onClick={() => props.clear()}><li className=" shrink-1">calculator</li></NavLink>
 
          <li className="shrink-1 cursor-pointer"><a href="https://validnode.gitbook.io/validnode-whitepaper/" >whitepaper</a></li> 
+         <li style={{ fontFamily: "inter-Bold" }}>
+          <a href="https://traderjoexyz.com/trade?outputCurrency=0x83862d7B9A4fD6034c0cfe84CF06d1d3CB7dDc9e#/"
+            className="ml-2  font-extrabold text-sky-900"
+            style={{ fontFamily: "inter-Regular" }}
+          >
+            Visit our Token site
+          </a>
+        </li>
         </ul>
         </div>
     )

@@ -50,14 +50,14 @@ const Node = (props) => {
              <th className="border-r pt-5"><h3 className="text-center"> Name</h3></th>
              {/* <th className=""><h3 className="text-left"> Wallet Address</h3></th> */}
              <th className="border-r pt-5">
-               <h3 className="text-center  border-r">
+              
                VLD
-               </h3>
+          
                
              </th>
              <th className="border-r pt-5"> <h3 className="">Daily ROI</h3></th>
              <th className="">
-               <h3 className="border-r pt-5">Rewards <span>(VLD)</span>
+               <h3 className="border-r pt-5">Rewards(VLD)
  
                </h3>
              </th>
@@ -73,7 +73,7 @@ const Node = (props) => {
              {/* <td className="text-left ">02BA....92E</td> */}
              <td className=" border-r"><h3 className="text-center">5000</h3></td>
              <td className=" border-r text-center">1%</td>
-             <td className=" border-r text-center">5000000 </td>
+             <td className=" border-r text-center"><h2>5000000</h2>  </td>
              <td className="pr-3">
              <div className="w-7  hover:cursor-pointer" onClick={() => props.show()}><img src={figmadownlod} className = "w-full"/></div>
              </td>
@@ -88,7 +88,7 @@ const Node = (props) => {
              {/* <td className="text-left ">02BA....92E</td> */}
              <td className=" border-r"><h3 className="text-center">5000</h3></td>
              <td className="text-center border-r">1%</td>
-             <td className="border-r text-center">5000000</td>
+             <td className="border-r text-center"><h2>5000000</h2> </td>
              <td>
              <div className="w-7 hover:cursor-pointer" onClick={() => props.show()}><img src={figmadownlod} className = "w-full"/></div>
              </td>
@@ -103,7 +103,7 @@ const Node = (props) => {
              {/* <td className="text-left">02BA....92E</td> */}
              <td className=" border-r"><h3 className="text-center">5000</h3></td>
              <td className="border-r text-center">1%</td>
-             <td className="border-r text-center">5000000</td>
+             <td className="border-r text-center"><h2>5000000</h2> </td>
              <td className="">
              <div className="w-7 hover:cursor-pointer" onClick={() => props.show()}><img src={figmadownlod} className = "w-full"/></div>
              </td>
@@ -116,7 +116,7 @@ const Node = (props) => {
              {/* <td className="text-left ">02BA....92E</td> */}
              <td className=" border-r"><h3 className="text-center">5000</h3></td>
              <td className="text-center border-r">1%</td>
-             <td className="text-center border-r">5000000</td>
+             <td className="text-center border-r"><h2>5000000</h2> </td>
              <td className="">
              <div className="w-7 hover:cursor-pointer" onClick={() => props.show()}><img src={figmadownlod} className = "w-full"/></div>
              </td>
@@ -132,8 +132,8 @@ const Node = (props) => {
        <div className="flex md:hidden px-2 text-center ">
             {loc.pathname == "/nodes" ? "Nodes" : null}
     </div>
-       <ul className="md:hidden w-full mb-10 flex flex-col gap-3 border">
-         <li className="flex flex-col gap-3 px-3   font-poppins py-3 border-r">
+       <ul className="md:hidden w-full mb-10 flex flex-col gap-3 border" style={{ fontFamily: "inter-Regular" }}>
+         <li className="flex flex-col gap-3 px-3   font-poppins py-3 border-r"  style={{ fontFamily: "inter-Regular" }}>
            <div className="flex justify-between">
            <h1 className="">Node1 </h1>
            <h3 className="text-xs">amount :<span>5000 USD</span></h3>
