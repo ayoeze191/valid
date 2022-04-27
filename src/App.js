@@ -82,11 +82,11 @@ function App() {
 
   return (
     <Router>
-    <div className="flex flex-col  relative md:h-screen my-auto h-full items-center justify-center box-border">
+    <div className="flex flex-col h-screen relative justify-center items-center">
 
       <Header modalStatus = {changeModalStatus} submit = {showCreatenode}/>
       
-      <div className='flex-1 w-full h-full'>
+      <div className='flex-1 w-full relative'>
         <Routes>
           <Route path='/' element = {<Dashboard/>} />
           <Route path='/calculator' element = {<Calculator/>} />

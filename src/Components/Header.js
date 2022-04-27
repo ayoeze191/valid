@@ -13,7 +13,7 @@ const Header = (props) => {
 //   {loc.pathname == "/nodes" ? "Nodes" : null}
 // </div>
   return (
-    <div className="pl-10 pr-2 md:px-20 flex justify-between py-2  box-shadow-header w-full h-fit header mt-10 md:mt-0">
+    <div className="pl-10 pr-2 md:px-20 flex justify-between py-2  box-shadow-header w-full h-fit header">
       {/* <div className="flex-1"> */}
       <div className="w-14 shrink-0">
         <NavLink to="/">

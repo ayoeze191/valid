@@ -23,10 +23,10 @@ const CreateNode = (props) => {
     <div className=' flex flex-col justify-between gap-10 text-blue-600 font-poppins rounded-lg absolute items-center z-50 bg-white px-4 py-3'>
         <div className='flex flex-col gap-5 bg-white px-5 py-5 rounded-lg w-full'>
         <div className='flex flex-col w-full gap-1'>
-            Node Name: <input type='text' className='border' name = 'name' onChange={(e) => onChangleHandler(e)} />
+           <h3 className='text-sm'> Node Name:</h3> <input type='text' className='border' name = 'name' onChange={(e) => onChangleHandler(e)} />
         </div>
         <div className='flex flex-col gap-1'>
-            Amount of Node in VLD:<input type='text' className='border' name = 'amount'onChange={(e) => onChangleHandler(e)}/>
+           <h3 className='text-sm'> Amount of Node in VLD:</h3><input type='text' className='border' name = 'amount'onChange={(e) => onChangleHandler(e)}/>
         </div>
         <div className='items-center'>
             <button className='btn px-5 text-white font-poppins mx-auto' onClick={() => onsubmitHandler()}>Add Node</button>

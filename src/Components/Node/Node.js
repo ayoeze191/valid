@@ -45,21 +45,19 @@ const Node = (props) => {
     <div className="flex flex-col items-center w-full h-full px-10">
      <div className="hidden flex-1 md:flex items-center w-1/2 max-w-2xl">
        <table className="w-full max-w-4xl text-sm md:table min-h-[300px] box-shadow-table" style={{"fontFamily": "inter-Regular"}} >
-         <thead className="text-gray-400 border-b">
+         <thead className="text-gray-400 border-r">
            <tr className="">
-             <th className="flex items-center pl-10 pr-5"><h3 className="flex h-full text-center items-center w-20 pb-2 mt-3"> Name</h3></th>
-             <th className=""><h3 className="text-left"> Wallet Address</h3></th>
-             <th className="text- pr-5 ">
-               <h3 className="text-center">
- 
+             <th className="border-r pt-5"><h3 className="text-center"> Name</h3></th>
+             {/* <th className=""><h3 className="text-left"> Wallet Address</h3></th> */}
+             <th className="border-r pt-5">
+               <h3 className="text-center  border-r">
                VLD
-        
                </h3>
                
              </th>
-             <th className=" pr-5"> <h3 className="">Daily ROI</h3></th>
-             <th className=" text-left pr-5">
-               <h3 className="">Rewards <span>(VLD)</span>
+             <th className="border-r pt-5"> <h3 className="">Daily ROI</h3></th>
+             <th className="">
+               <h3 className="border-r pt-5">Rewards <span>(VLD)</span>
  
                </h3>
              </th>
@@ -70,12 +68,12 @@ const Node = (props) => {
          </thead>
  
          <tbody className="">
-           <tr className="border-b">
-             <td className="text-left pl-10">Node 1</td>
-             <td className="text-left ">02BA....92E</td>
-             <td className="text-left">5000</td>
-             <td className="text-center">1%</td>
-             <td className="text-left">5000000 </td>
+           <tr className="border-r">
+             <td className=" border-r "><h1 className="text-center">Node 1</h1></td>
+             {/* <td className="text-left ">02BA....92E</td> */}
+             <td className=" border-r"><h3 className="text-center">5000</h3></td>
+             <td className=" border-r text-center">1%</td>
+             <td className=" border-r text-center">5000000 </td>
              <td className="pr-3">
              <div className="w-7  hover:cursor-pointer" onClick={() => props.show()}><img src={figmadownlod} className = "w-full"/></div>
              </td>
@@ -85,14 +83,14 @@ const Node = (props) => {
              
            </tr>
  
-           <tr className="border-b">
-             <td className="text-left pl-10">Node 1</td>
-             <td className="text-left ">02BA....92E</td>
-             <td className="text-left">5000</td>
-             <td className="text-center">1%</td>
-             <td className="text-left">5000000</td>
+           <tr className="border-r">
+           <td className=" border-r "><h1 className="text-center">Node 1</h1></td>
+             {/* <td className="text-left ">02BA....92E</td> */}
+             <td className=" border-r"><h3 className="text-center">5000</h3></td>
+             <td className="text-center border-r">1%</td>
+             <td className="border-r text-center">5000000</td>
              <td>
-             <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+             <div className="w-7 hover:cursor-pointer" onClick={() => props.show()}><img src={figmadownlod} className = "w-full"/></div>
              </td>
              <td>
              <div className="w-4  hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
@@ -100,29 +98,29 @@ const Node = (props) => {
              
            </tr>
  
-           <tr className="border-b">
-             <td className="text-left pl-10">Node 1</td>
-             <td className="text-left">02BA....92E</td>
-             <td className="text-left">5000</td>
-             <td className="text-center">1%</td>
-             <td className="text-left">5000000</td>
+           <tr className="border-r">
+           <td className=" border-r "><h1 className="text-center">Node 1</h1></td>
+             {/* <td className="text-left">02BA....92E</td> */}
+             <td className=" border-r"><h3 className="text-center">5000</h3></td>
+             <td className="border-r text-center">1%</td>
+             <td className="border-r text-center">5000000</td>
              <td className="">
-             <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+             <div className="w-7 hover:cursor-pointer" onClick={() => props.show()}><img src={figmadownlod} className = "w-full"/></div>
              </td>
              <td  className="w-fit pr-4">
              <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
              </td>
            </tr>
-           <tr className="border-b">
-             <td className="text-left pl-10">Node 1</td>
-             <td className="text-left ">02BA....92E</td>
-             <td className="text-left">5000</td>
-             <td className="text-center">1%</td>
-             <td className="text-left">5000000</td>
+           <tr className="border-r">
+           <td className=" border-r "><h1 className="text-center">Node 1</h1></td>
+             {/* <td className="text-left ">02BA....92E</td> */}
+             <td className=" border-r"><h3 className="text-center">5000</h3></td>
+             <td className="text-center border-r">1%</td>
+             <td className="text-center border-r">5000000</td>
              <td className="">
-             <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
+             <div className="w-7 hover:cursor-pointer" onClick={() => props.show()}><img src={figmadownlod} className = "w-full"/></div>
              </td>
-             <td  className="w-fit ">
+             <td  className="w-fit bot">
              <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
              </td>
            </tr>
@@ -135,77 +133,77 @@ const Node = (props) => {
             {loc.pathname == "/nodes" ? "Nodes" : null}
     </div>
        <ul className="md:hidden w-full mb-10 flex flex-col gap-3 border">
-         <li className="flex flex-col gap-3 px-3   font-poppins py-3 border-b">
+         <li className="flex flex-col gap-3 px-3   font-poppins py-3 border-r">
            <div className="flex justify-between">
            <h1 className="">Node1 </h1>
            <h3 className="text-xs">amount :<span>5000 USD</span></h3>
            </div>
-           <div className="flex justify-between items-center">
-             <div className="text-center text-xs">02BA....92E</div>
+           {/* <div className="flex justify-between items-center">
+             <div className="text-center text-xs">02BA....92E</div> */}
              <div className="flex gap-6 justify-end">
              <h3 className="text-xs"> Reward: 25021 vld</h3>
             <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full hover:cursor-pointer"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full hover:cursor-pointer"/></div>
             </div>
-           </div>
+           {/* </div> */}
          </li>
 
          
-         <li className="flex flex-col gap-3 px-3    font-poppins py-3  border-b">
+         <li className="flex flex-col gap-3 px-3    font-poppins py-3  border-r">
            <div className="flex justify-between">
            <h1 className="">Node2</h1>
            <h3 className="text-xs">amount: <span>5000 USD</span></h3>
            </div>
-           <div className="flex justify-between items-center">
-           <div className="text-center text-xs">02BA....92E</div>
+           {/* <div className="flex justify-between items-center">
+           <div className="text-center text-xs">02BA....92E</div> */}
            <div className="flex gap-6 justify-end">
-             <h3 className="text-xs"> Reward: 25021 vld</h3>
+             <h3 className="text-xs"> <span className="text-[0.7rem]">Reward:</span> 25021 vld</h3>
             <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
-           </div>
+           {/* </div> */}
            </div>
          </li>
-         <li className="flex flex-col gap-3 px-3   font-poppins py-3  border-b">
+         <li className="flex flex-col gap-3 px-3   font-poppins py-3  border-r">
            <div className="flex justify-between">
            <h1 className="">Node1</h1>
            <h3 className="text-xs">amount: <span>5000 USD</span></h3>
            </div>
-           <div className="flex justify-between items-center">
-           <div className="text-center text-xs">02BA....92E</div>
+           {/* <div className="flex justify-between items-center"> */}
+           {/* <div className="text-center text-xs">02BA....92E</div> */}
            <div className="flex gap-6 justify-end">
-             <h3 className="text-xs"> Reward: 25021 vld</h3>
+              <h3 className="text-xs"> <span className="text-[0.7rem]">Reward:</span> 25021 vld</h3>
             <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
            </div>
-           </div>
+           {/* </div> */}
          </li>
          
-         <li className="flex flex-col gap-3 px-3   font-poppins py-3  border-b">
+         <li className="flex flex-col gap-3 px-3   font-poppins py-3  border-r">
            <div className="flex justify-between">
            <h1 className="">Node1</h1>
            <h3 className="text-xs">amount: <span>5000 USD</span></h3>
            </div>
-           <div className="flex justify-between items-center">
-           <div className="text-center text-xs">02BA....92E</div>
+           {/* <div className="flex justify-between items-center"> */}
+           {/* <div className="text-center text-xs">02BA....92E</div> */}
            <div className="flex gap-6 justify-end">
-             <h3 className="text-xs"> Reward: 25021 vld</h3>
+           <h3 className="text-xs"> <span className="text-[0.7rem]">Reward:</span> 25021 vld</h3>
             <div className="w-7  hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
-           </div>
+           {/* </div> */}
            </div>
          </li>
-         <li className="flex flex-col gap-3 px-3   font-poppins py-3  border-b">
+         <li className="flex flex-col gap-3 px-3   font-poppins py-3  border-r">
            <div className="flex justify-between">
            <h1 className="">Node1</h1>
            <h3 className="text-xs">amount: <span>5000 USD</span></h3>
            </div>
-           <div className="flex justify-between items-center">
-           <div className="text-center text-xs">02BA....92E</div>
+           {/* <div className="flex justify-between items-center">
+           <div className="text-center text-xs">02BA....92E</div> */}
            <div className="flex gap-6 justify-end">
-             <h3 className="text-xs"> Reward: 25021vld</h3>
+           <h3 className="text-xs"> <span className="text-[0.7rem]">Reward:</span> 25021 vld</h3>
             <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
-           </div>
+           {/* </div> */}
            </div>
          </li>
        </ul>
