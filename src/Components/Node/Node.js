@@ -129,7 +129,7 @@ const Node = (props) => {
  
        </div>
        <div className="w-full flex flex-col justify-center mt-10 gap-2">
-       <div className="flex md:hidden px-2 text-center ">
+       <div className="flex md:hidden px-2 text-center text-linear">
             {loc.pathname == "/nodes" ? "Nodes" : null}
     </div>
        <ul className="md:hidden w-full mb-10 flex flex-col gap-3 border" style={{ fontFamily: "inter-Regular" }}>

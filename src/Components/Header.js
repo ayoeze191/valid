@@ -41,7 +41,7 @@ const Header = (props) => {
         </ul>
         <div style={{ fontFamily: "inter-Bold" }}>
           <a href="https://traderjoexyz.com/trade?outputCurrency=0x83862d7B9A4fD6034c0cfe84CF06d1d3CB7dDc9e#/"
-            className="ml-2  font-extrabold text-blue-500"
+            className="ml-2  font-extrabold text-blue-500 hidden md:block"
             style={{ fontFamily: "inter-Regular" }}
           >
             Visit our Token site

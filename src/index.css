@@ -8,6 +8,9 @@
     .bg-linear{
         background: linear-gradient(244.45deg, #515099 8.04%, #0077B6 66.17%);
     }
+    .date-picker:hover .dates{
+        display: block;
+    }
 }
 *{
     padding: 0;
@@ -88,6 +91,9 @@ a:active,.header .active li{
         background-clip: text;
         color: transparent;
         /* text-fill-color: transparent */
+    }
+    .dayselected{
+        background-color: #00CA85;
     }
 }
 @layer components{
