@@ -11,6 +11,9 @@ module.exports = {
         "poppins-bold": ["Poppins-Bold"],
         "outfit": ['Outfit-ExtraBold'],
       },
+      screens: {
+        md: '1099px'
+      }
     },
   },
   variants: {

@@ -30,7 +30,7 @@ const Node = (props) => {
 
 
   return (
-    <div className="w-full flex  md:flex flex-col items-center justify-between h-full  md:px-auto py-0 md:h-full">
+    <div className="w-full flex  md:flex flex-col items-center justify-between  md:px-auto py-0 md:h-full">
       {is_authenticated?<div className="w-full pl-10 pr-6 md:px-20 flex justify-end items-center pt-2"><div className="flex gap-1"><GoogleLogin
       clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}
       buttonText = {user}
@@ -128,8 +128,8 @@ const Node = (props) => {
        </table>
  
        </div>
-       <div className="w-full flex flex-col justify-center mt-10 gap-2">
-       <div className="flex md:hidden px-2 text-center text-linear">
+       <div className="w-full flex flex-col justify-center mt-10 gap-2 ">
+       <div className="flex md:hidden px-2 text-center text-linear text-color md:gap-16" style={{ fontFamily: "inter-Regular" }}>
             {loc.pathname == "/nodes" ? "Nodes" : null}
     </div>
        <ul className="md:hidden w-full mb-10 flex flex-col gap-3 border" style={{ fontFamily: "inter-Regular" }}>
@@ -157,7 +157,7 @@ const Node = (props) => {
            {/* <div className="flex justify-between items-center">
            <div className="text-center text-xs">02BA....92E</div> */}
            <div className="flex gap-6 justify-end">
-             <h3 className="text-xs"> <span className="text-[0.7rem]">Reward:</span> 25021 vld</h3>
+             <h3 className="text-xs"> <span className="text-[0.7rem]">Reward:</span> 25021 VLD</h3>
             <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
            {/* </div> */}
@@ -171,7 +171,7 @@ const Node = (props) => {
            {/* <div className="flex justify-between items-center"> */}
            {/* <div className="text-center text-xs">02BA....92E</div> */}
            <div className="flex gap-6 justify-end">
-              <h3 className="text-xs"> <span className="text-[0.7rem]">Reward:</span> 25021 vld</h3>
+              <h3 className="text-xs"> <span className="text-[0.7rem]">Reward:</span> 25021 VLD</h3>
             <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
            </div>
@@ -186,7 +186,7 @@ const Node = (props) => {
            {/* <div className="flex justify-between items-center"> */}
            {/* <div className="text-center text-xs">02BA....92E</div> */}
            <div className="flex gap-6 justify-end">
-           <h3 className="text-xs"> <span className="text-[0.7rem]">Reward:</span> 25021 vld</h3>
+           <h3 className="text-xs"> <span className="text-[0.7rem]">Reward:</span> 25021 VLD</h3>
             <div className="w-7  hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
            {/* </div> */}
@@ -200,7 +200,7 @@ const Node = (props) => {
            {/* <div className="flex justify-between items-center">
            <div className="text-center text-xs">02BA....92E</div> */}
            <div className="flex gap-6 justify-end">
-           <h3 className="text-xs"> <span className="text-[0.7rem]">Reward:</span> 25021 vld</h3>
+           <h3 className="text-xs"> <span className="text-[0.7rem]">Reward:</span> 25021 VLD</h3>
             <div className="w-7 hover:cursor-pointer"><img src={figmadownlod} className = "w-full"/></div>
             <div className="w-4 hover:cursor-pointer"><img src={figmafork} className = "w-full"/></div>
            {/* </div> */}
