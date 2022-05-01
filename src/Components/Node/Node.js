@@ -43,7 +43,7 @@ const Node = (props) => {
       {is_authenticated?
      
     <div className="flex flex-col items-center w-full h-full px-10">
-     <div className="hidden flex-1 md:flex items-center w-1/2 max-w-2xl">
+     <div className="hidden flex-1 sm:flex items-center w-[90%] max-w-2xl">
        <table className="w-full max-w-4xl text-sm md:table min-h-[300px] box-shadow-table" style={{"fontFamily": "inter-Regular"}} >
          <thead className="text-gray-400 border-r">
            <tr className="">
@@ -129,10 +129,10 @@ const Node = (props) => {
  
        </div>
        <div className="w-full flex flex-col justify-center mt-10 gap-2 ">
-       <div className="flex md:hidden px-2 text-center text-linear text-color md:gap-16" style={{ fontFamily: "inter-Regular" }}>
+       <div className="flex sm:hidden px-2 text-center text-linear text-color md:gap-16" style={{ fontFamily: "inter-Regular" }}>
             {loc.pathname == "/nodes" ? "Nodes" : null}
     </div>
-       <ul className="md:hidden w-full mb-10 flex flex-col gap-3 border" style={{ fontFamily: "inter-Regular" }}>
+       <ul className="sm:hidden w-full mb-10 flex flex-col gap-3 border" style={{ fontFamily: "inter-Regular" }}>
          <li className="flex flex-col gap-3 px-3   font-poppins py-3 border-r"  style={{ fontFamily: "inter-Regular" }}>
            <div className="flex justify-between">
            <h1 className="">Node1 </h1>
